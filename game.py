@@ -2,10 +2,7 @@
 I acknowledge the use of
 Microsoft Copilot (version GPT-4, Microsoft, https://copilot.microsoft.com/)
 to create the code in this file 
-"""
-import random
 
-"""
 Guess the Number Game
 ---------------------
 A simple text-based game where the player tries to guess a random number.
