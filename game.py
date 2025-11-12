@@ -28,7 +28,9 @@ def play_game():
         elif guess > number_to_guess:
             print("Too high! Try again.")
         else:
+            score = max(100 - (attempts - 1) * 10, 10)
             print(f"Congratulations! You guessed it in {attempts} tries.")
+            print(f"Your score: {score} points.")
             break
 
 def main():
