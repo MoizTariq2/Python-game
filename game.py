@@ -8,7 +8,7 @@ import random
 def play_game():
     number_to_guess = random.randint(1, 100)
     attempts = 0
-    print("Welcome to Guess the Number!")
+    print("\nWelcome to Guess the Number!")
     print("I'm thinking of a number between 1 and 100.")
 
     while True:
@@ -31,6 +31,15 @@ def play_game():
             print(f"Congratulations! You guessed it in {attempts} tries.")
             break
 
+def main():
+    while True:
+        play_game()
+        again = input("Play again? (y/n): ").lower()
+        if again != 'y':
+            print("Thanks for playing!")
+            break
+
 if __name__ == "__main__":
-    play_game()
+    main()
+
 
